@@ -1,0 +1,39 @@
+.groups{
+  display: flex;
+  flex-direction: row;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: scroll;
+  margin-top: -30px;
+}
+.groups::-webkit-scrollbar{
+  display: none;
+}
+
+.cart{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: white;
+
+  max-width: 100px;
+  min-width: 100px;
+  height: 100%;
+
+  margin-right: 15px;
+
+  font-size: 12px;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 50px;
+}
+
+.cart:first-of-type{
+  margin-left: 15px;
+}
+
+#progress-bar-container{
+  width: 100%;
+  background-color: #8c86f7;
+}
+#progress-bar-used{
+  height: 4px;
+  background-color: #3f37c9;
+}

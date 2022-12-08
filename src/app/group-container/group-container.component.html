@@ -1,0 +1,15 @@
+<div class="groups">
+  <div class="cart" *ngFor="let group of groups" (click)="selectGroup(group)">
+    <h1>{{group.title}}</h1>
+    <h2>{{getAmountOfNotes(group)}} Aufgaben</h2>
+    <div id="progress-bar-container" *ngIf="hasOpenTasks(group)">
+      <div id="progress-bar-used" [style.width.%]="calculatePercentage(group)"></div>
+    </div>
+  </div>
+  <div class="cart" (click)="createNewNote()">
+    <span class="material-symbols-outlined">
+    add_circle
+    </span>
+  </div>
+</div>
+

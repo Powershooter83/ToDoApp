@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Group} from "../models/models";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ToDoApp';
+
+  selectedGroup: Group = {title: 'Group 1', groupId: 1, notes: []};
+
+  selectGroup(group: Group) {
+    this.selectedGroup = group;
+  }
+
 }
